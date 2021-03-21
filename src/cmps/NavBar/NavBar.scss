@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  min-height: 80px;
+  ul {
+    display: flex;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    margin: 0px;
+    padding: 12px;
+  }
+  li:not(:last-child) {
+    margin-right: 10px;
+  }
+  & a:hover {
+    text-decoration: none;
+  }
+  .nav-logo {
+    align-items: center;
+    display: flex;
+    span {
+      font-family: 'Karla', sans-serif;
+      margin-left: 5px;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.navbar-container {
+  background-color: #fff;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 12px;
+}
