@@ -1,0 +1,11 @@
+
+    //@import '../../../assets/scss/global.scss';
+    .itemlist-container {
+
+            .cards {
+                & > *:not(:last-of-type) {
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.171);
+                    margin-bottom: 24px;
+                  }
+            }
+    }

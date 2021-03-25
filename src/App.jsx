@@ -1,4 +1,3 @@
-import Navbar from './cmps/NavBar';
 import Home from './pages/Home';
 import 'antd/dist/antd.css';
 
@@ -27,7 +26,6 @@ export class App extends Component {
     return (
       <div className="main-container">
         <Router>
-          <Navbar />
           <main>
             <Switch>
               <WelcomeRoute

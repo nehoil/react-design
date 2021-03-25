@@ -1,0 +1,16 @@
+@import '../../assets/scss/global.scss';
+.footer-container {
+  background: #111111;
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+    height: 240px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    line-height: 28px;
+    
+  }
+}

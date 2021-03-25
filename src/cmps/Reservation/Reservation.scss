@@ -1,0 +1,38 @@
+@import '../../assets/scss/global.scss';
+.reservation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 240px;
+  background-image: url('../../assets/img/homepage/ready-bg-desktop.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  flex-wrap: wrap;
+  @include for-mobile-layout {
+    text-align: center;
+
+  }
+  .title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 56px;
+    margin-right: 226px;
+    @include for-mobile-layout {
+      margin-right: 0;
+    }
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffff;
+    width: 245px;
+    height: 64px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+}

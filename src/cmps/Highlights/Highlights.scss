@@ -1,0 +1,52 @@
+@import '../../assets/scss/global.scss';
+.highlights-container {
+  height: 761px;
+  background: #111111;
+  color: #ffffff;
+  display: flex;
+  @include for-mobile-layout {
+    margin: 100px 0;
+    height: fit-content;
+  }
+
+  .highlights-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .side-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 125px;
+    @include for-mobile-layout {
+      margin: 0;
+    }
+  }
+
+  .side-line {
+    margin-bottom: 48px;
+  }
+
+  .side-title {
+    width: 13ch;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 56px;
+    margin-bottom: 16px;
+    @include for-mobile-layout {
+      width: 100%;
+    }
+  }
+
+  .side-desc {
+    width: 30ch;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.225px;
+    @include for-mobile-layout {
+      width: 100%;
+    }
+  }
+}

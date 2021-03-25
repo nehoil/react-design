@@ -1,12 +1,12 @@
 const fs = require('fs');
 const path = require('path');
 
-// node create-component.js --name "WelcomePage" --dir "./pages/"
+// node create-component.js --name "MtlTstList" --dir "./cmps/"
 
 const validOptions = {
-    name: 'name', 
-    n: 'name', 
-    dir: 'dir', 
+    name: 'name',
+    n: 'name',
+    dir: 'dir',
     d: 'dir',
     style: 'style',
     s: 'style',
@@ -36,7 +36,7 @@ const cleanOption = (op) => {
 }
 
 const validateOption = (op) => {
-    if (!validOptions[op])  throw `'${op}' is not a valid option!`
+    if (!validOptions[op]) throw `'${op}' is not a valid option!`
 }
 
 const validateValue = (val) => {
@@ -48,54 +48,38 @@ const validateValue = (val) => {
 const parseOptions = (args) => {
     const options = Object.assign({}, defaultOptions)
 
-    for (let i=0; i < args.length; i=i+2) {
+    for (let i = 0; i < args.length; i = i + 2) {
         const op = cleanOption(args[i])
-        const val = args[i +1]
-        
+        const val = args[i + 1]
+
         validateOption(op)
         validateValue(val)
-    
+
         options[op] = val
     }
-    
+
     if (!options.name) throw 'name is required!'
-    
+
     return options
 }
 
 const componentClassTemplate = (cmpName, style) => `
-import React, { Component } from 'react'
-
 import './${cmpName}.${style}'
 
-class ${cmpName} extends Component {
+export default function ${cmpName}() {
 
-    render() {
-        return <div>${cmpName}</div>
-    }
-}
-
-export default ${cmpName}
-`
-
-const componentFunctionTemplate = (cmpName, style) => `
-import React from 'react'
-
-import './${cmpName}.${style}'
-
-const ${cmpName} = (props) => {
-
-    return {
-
-    }
-}
-
-export default ${cmpName}
-`
+  return (
+    <div className="${cmpName.toLowerCase()}-main-container">
+      <h2>${cmpName}</h2>
+    </div>
+  );
+}`
 
 const styleTemplate = (styleName) => {
     const name = styleName.charAt(0).toLowerCase() + styleName.slice(1)
-    return `.${name}-container {}`
+    return `
+    //@import '../../../assets/scss/global.scss';
+    .${name.toLowerCase()}-main-container {}`
 }
 
 const showHelp = () => {
@@ -116,13 +100,13 @@ try {
     }
 
     const options = parseOptions(args)
-    const {name, dir, style, cmpType} = options
+    const { name, dir, style, cmpType } = options
     const rootDir = path.join(__dirname, `/src/${dir}/${name}`)
 
     fs.mkdirSync(rootDir);
 
-    fs.writeFileSync(`${rootDir}/${name}.${style}`,styleTemplate(name))
-    console.log("css file created successfully");
+    fs.writeFileSync(`${rootDir}/${name}.${style}`, styleTemplate(name))
+    console.log("scss file created successfully");
 
     const template = cmpType === 'class' ? componentClassTemplate : componentFunctionTemplate
     fs.writeFileSync(`${rootDir}/${name}.jsx`, template(name, style))
@@ -130,6 +114,6 @@ try {
 
     fs.writeFileSync(`${rootDir}/index.js`, `export { default } from './${name}.jsx'`);
     console.log("index file created successfully");
-} catch(e) {
+} catch (e) {
     console.log('ERROR:', e.message ? e.message : e)
 }

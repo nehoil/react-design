@@ -1,5 +1,7 @@
-.hp-container {
-
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .loader {
   width: 100%;

@@ -1,0 +1,130 @@
+@import '../../assets/scss/global.scss';
+.bigcards-container {
+  width: 100%;
+  display: flex;
+  height: 1400px;
+  position: relative;
+  @include for-mobile-layout {
+    margin: 150px 0;
+    height: initial;
+
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    flex-wrap: wrap;
+    top: -100px;
+    @include for-mobile-layout {
+      position: relative;
+      top: 0;
+      flex-direction: row;
+      margin: 100px 0;
+    }
+  }
+
+  .card {
+    display: flex;
+    position: relative;
+    @include for-mobile-layout {
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+    }
+    &:first-of-type {
+      margin-bottom: 121px;
+      .img {
+        margin-right: 125px;
+        @include for-mobile-layout {
+          margin: 0;
+        }
+      }
+    }
+    &:not(:first-of-type) {
+      flex-direction: row-reverse;
+      .img {
+        margin-left: 125px;
+        @include for-mobile-layout {
+          margin: 0;
+        }
+      }
+    }
+
+    .text {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      @include for-mobile-layout {
+        margin-top: 30px;
+      text-align: center;
+      }
+    }
+
+    // Patterns
+
+    .line {
+      margin-bottom: 42px;
+      @include for-mobile-layout {
+        display: none;
+      }
+    }
+
+    .brown-lines {
+      position: absolute;
+      top: 250px;
+      right: -100px;
+      @include for-mobile-layout {
+        display: none;
+      }
+    }
+
+    .pattern-curve {
+      position: absolute;
+      bottom: 100px;
+      left: -200px;
+    }
+
+    .img {
+      @include for-mobile-layout {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        margin-bottom: 50px;
+        img {
+          width: 327px;
+        }
+      }
+
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+
+    .title {
+      width: 10ch;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 56px;
+      letter-spacing: -0.5px;
+      color: #242b37;
+      margin-bottom: 16px;
+      @include for-mobile-layout {
+       width: 100%;
+      }
+    }
+    .desc {
+      width: 30ch;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 30px;
+      letter-spacing: -0.225px;
+      color: #242b37;
+      @include for-mobile-layout {
+        width: 100%;
+      }
+    }
+  }
+}
