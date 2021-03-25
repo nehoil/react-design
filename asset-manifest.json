@@ -1,25 +1,37 @@
 {
   "files": {
-    "main.css": "/react-design/static/css/main.0633fe12.chunk.css",
-    "main.js": "/react-design/static/js/main.6a3b83d5.chunk.js",
-    "main.js.map": "/react-design/static/js/main.6a3b83d5.chunk.js.map",
-    "runtime-main.js": "/react-design/static/js/runtime-main.79dff1bf.js",
-    "runtime-main.js.map": "/react-design/static/js/runtime-main.79dff1bf.js.map",
+    "main.css": "/react-design/static/css/main.d3742e73.chunk.css",
+    "main.js": "/react-design/static/js/main.810b740d.chunk.js",
+    "main.js.map": "/react-design/static/js/main.810b740d.chunk.js.map",
+    "runtime-main.js": "/react-design/static/js/runtime-main.99cadc78.js",
+    "runtime-main.js.map": "/react-design/static/js/runtime-main.99cadc78.js.map",
     "static/css/2.4d98ed14.chunk.css": "/react-design/static/css/2.4d98ed14.chunk.css",
-    "static/js/2.95597093.chunk.js": "/react-design/static/js/2.95597093.chunk.js",
-    "static/js/2.95597093.chunk.js.map": "/react-design/static/js/2.95597093.chunk.js.map",
-    "static/js/3.b465c521.chunk.js": "/react-design/static/js/3.b465c521.chunk.js",
-    "static/js/3.b465c521.chunk.js.map": "/react-design/static/js/3.b465c521.chunk.js.map",
+    "static/js/2.63d528f4.chunk.js": "/react-design/static/js/2.63d528f4.chunk.js",
+    "static/js/2.63d528f4.chunk.js.map": "/react-design/static/js/2.63d528f4.chunk.js.map",
+    "static/js/3.7a040d75.chunk.js": "/react-design/static/js/3.7a040d75.chunk.js",
+    "static/js/3.7a040d75.chunk.js.map": "/react-design/static/js/3.7a040d75.chunk.js.map",
     "index.html": "/react-design/index.html",
     "static/css/2.4d98ed14.chunk.css.map": "/react-design/static/css/2.4d98ed14.chunk.css.map",
-    "static/css/main.0633fe12.chunk.css.map": "/react-design/static/css/main.0633fe12.chunk.css.map",
-    "static/js/2.95597093.chunk.js.LICENSE.txt": "/react-design/static/js/2.95597093.chunk.js.LICENSE.txt"
+    "static/css/main.d3742e73.chunk.css.map": "/react-design/static/css/main.d3742e73.chunk.css.map",
+    "static/js/2.63d528f4.chunk.js.LICENSE.txt": "/react-design/static/js/2.63d528f4.chunk.js.LICENSE.txt",
+    "static/media/enjoyable-place-desktop.06399aa5.jpg": "/react-design/static/media/enjoyable-place-desktop.06399aa5.jpg",
+    "static/media/family-gathering-desktop.03b16029.jpg": "/react-design/static/media/family-gathering-desktop.03b16029.jpg",
+    "static/media/Header.scss": "/react-design/static/media/hero-bg-desktop.b1340563.jpg",
+    "static/media/locally-sourced-desktop.957d3e79.jpg": "/react-design/static/media/locally-sourced-desktop.957d3e79.jpg",
+    "static/media/logo.f6ae2c4c.svg": "/react-design/static/media/logo.f6ae2c4c.svg",
+    "static/media/menu-item1.7bd94a87.jpg": "/react-design/static/media/menu-item1.7bd94a87.jpg",
+    "static/media/menu-item2.81249e77.jpg": "/react-design/static/media/menu-item2.81249e77.jpg",
+    "static/media/menu-item3.22eddbf1.jpg": "/react-design/static/media/menu-item3.22eddbf1.jpg",
+    "static/media/pattern-curve-top-right.df37c69d.svg": "/react-design/static/media/pattern-curve-top-right.df37c69d.svg",
+    "static/media/pattern-divide.bf6d0c5c.svg": "/react-design/static/media/pattern-divide.bf6d0c5c.svg",
+    "static/media/pattern-lines.df381b88.svg": "/react-design/static/media/pattern-lines.df381b88.svg",
+    "static/media/Reservation.scss": "/react-design/static/media/ready-bg-desktop.7404dbad.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.79dff1bf.js",
+    "static/js/runtime-main.99cadc78.js",
     "static/css/2.4d98ed14.chunk.css",
-    "static/js/2.95597093.chunk.js",
-    "static/css/main.0633fe12.chunk.css",
-    "static/js/main.6a3b83d5.chunk.js"
+    "static/js/2.63d528f4.chunk.js",
+    "static/css/main.d3742e73.chunk.css",
+    "static/js/main.810b740d.chunk.js"
   ]
 }
